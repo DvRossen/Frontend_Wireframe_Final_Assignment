@@ -1,0 +1,56 @@
+:root{
+    font-size: 16px;   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+header{
+    display: flex;
+    background-color: #e0e0e0;
+    padding:1em;
+}
+header nav{
+    margin-left:auto;
+}
+
+section{
+    display: flex;
+}
+
+footer{
+    display: flex;
+}
+
+/*Text*/
+
+hr{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+/*Images*/
+
+header img.logo-l{
+    width:50px;
+}
+
+svg.star{
+    padding: 0;
+    margin: 0;
+    width:1.5rem;
+    aspect-ratio: 1/1;
+}
+svg.yellow{
+    fill:gold;
+}
+svg.gray{
+    fill:gray;
+}
+
+/*Media queries*/
