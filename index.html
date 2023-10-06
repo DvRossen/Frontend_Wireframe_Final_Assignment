@@ -9,10 +9,10 @@
 <body>
     <header>
     
-        <img class="logo-l" src="assets/Real_News_Logo.png"> <!--logo here-->
+        <img class="logo" src="assets/Real_News_Logo.png"> <!--logo here-->
     
         <nav>
-           <a> <button>     <!--for every button add on hover color change-->
+            <a> <button>     <!--for every button add on hover color change-->
             </button> </a>
             <a> <button>
             </button> </a>
@@ -27,119 +27,121 @@
     
     <hr> <!-- page devider -->
 
-    <section id="headline"> <!-- add bg img here-->
-        
-        <div class="headline-wrapper">
-        <h1 id="headline"></h1> <!-- Article title-->
-        <p></p>
-        <div class="header-link-wrapper">
-        <a> <button>
-        </button> </a>
-        <a> <button>
-        </button> </a>
-        </div>
-        </div>
-
+    <section class="headline"> <!-- add bg img here-->
+            <div class="headline-wrapper">
+                <h1 id="headline">Real <span class="title-news">NEWS</span></h1> <!-- website title-->
+                <p class="headline">This is THE news outlet for real unfiltered news from The Netherlands! 
+                Our aim is to reduce the amount of fake news that circulates around these so called "mainstream news sources". 
+                This is totally not a parody of certain news and/or social media.. Not at all!</p>
+                <div class="header-link-wrapper flex">
+                    <a href="#articles"><button> Articles
+                    </button></a>
+                    <a href="#feedback-form"><button> Feedback
+                    </button></a>
+                </div>
+            </div>
     </section>
     
     <hr> <!-- page devider -->
 
-    <section>
-        <h2 id="Articles"> </h2> <!-- sub-heading -->
-        <div class="card-wrapper">
+    <section class="articles">
+        <h2 id="articles">Articles</h2> <!-- sub-heading -->
+        <div class="card-wrapper flex">
             
             <!-- These cards would've been so much easier using JS-->
-            <article class="card"> 
+            <article class="card flex-column"> 
                 <img class="card-img" src=""> <!--Add Border bottom for devider-->
                 <h3 class="card-title"></h3>
-                <div class="star-wrapper">
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg> <!--SVG's for scaleability-->
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <a> <button>
-                    </button></a>
-                </div>
+                <div class="star-wrapper flex">
+                    <img class=svg-star src="assets/gold-star.svg"> <!--SVG's for scaleability-->
+                    <img class=svg-star src="assets/gold-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg">
+                    </div> 
+                <button>
+                </button>
             </article>
 
-            <article class="card"> 
+            <article class="card flex-column"> 
                 <img class="card-img" src="">
                 <h3 class="card-title"></h3>
-                <div class="star-wrapper">          
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <a> <button>
-                    </button></a>
-                </div>
+                <div class="star-wrapper flex">          
+                    <img class=svg-star src="assets/gold-star.svg"> 
+                    <img class=svg-star src="assets/gold-star.svg"> 
+                    <img class=svg-star src="assets/gray-star.svg"> 
+                    <img class=svg-star src="assets/gray-star.svg"> 
+                    <img class=svg-star src="assets/gray-star.svg"> 
+                    </div>
+                <button>
+                </button>
+                
             </article>
 
-            <article class="card"> 
+            <article class="card flex-column"> 
                 <img class="card-img" src="">
                 <h3 class="card-title"></h3>
-                <div class="star-wrapper">
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star yellow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <svg class="star gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"></svg>
-                    <a> <button>
-                    </button></a>
-                </div>
+                <div class="star-wrapper flex">
+                    <img class=svg-star src="assets/gold-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg"> 
+                    <img class=svg-star src="assets/gray-star.svg">
+                    <img class=svg-star src="assets/gray-star.svg">
+                    </div>
+                <button>
+                </button>
+                
             </article>
 
         </div>
     </section>
     
     <section class="form">
-        <h2 class="form-heading"></h2>  <!--Form header-->
+        <h2 id="feedback-form"></h2>  <!--Form header-->
         <form>
-            <div class="name-input-wrapper"> 
-                <div class="label-input-wrapper">
+            <div class="name-input-wrapper flex"> 
+                <div class="label-input-wrapper flex-column">
                     <label for="first-name">First name</label>
                     <input placeholder="First name" type="text" id="first-name" required>
                 </div>
-                <div class="label-input-wrapper">
+                <div class="label-input-wrapper flex-column">
                     <label for="last-name">Last name</label>
                     <input placeholder="Last name" type="text" id="last-name" required>
                 </div>
             </div>
             
-            <div class="label-input-wrapper">
+            <div class="label-input-wrapper flex-column">
                 <label for="email">Email</label>
                 <input placeholder="Email" type="email" id="email" required>
             </div>
             
-            <div class="residence-birthday-wrapper">
-                <div class="label-input-wrapper">
+            <div class="residence-birthday-wrapper flex">
+                <div class="label-input-wrapper flex-column">
                     <label for="residence">Residence</label>
                     <input placeholder="City, Town, etc." type="text" id="residence" required>
                 </div>
-                <div class="label-input-wrapper">   
+                <div class="label-input-wrapper flex-column">   
                     <label for="birthday">Date of Birth</label>
                     <input placeholder="dd-mm-jj" type="date" id="birthday" required>
                 </div>
             </div> 
             
-            <div class="label-input-wrapper">
+            <div class="label-input-wrapper flex-column">
             <label for="feedback-type">Feedback subject</label>
                 <select name="Feedback type" id="feedback-type" required>
-                    <option value="placeholder" hidden>Choose a subject</option>
+                    <option value="" hidden>Choose a subject</option>
                     <option value="Article content">Article content</option>
                     <option value="Website layout">Website Layout</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
 
-            <div class="label-input-wrapper">
+            <div class="label-input-wrapper flex-column">
                 <label for="feedback-message">Message</label>
                 <input placeholder="Write your message here..." type="text" id="feedback-message" required>
             </div>
 
-            <div class="label-input-wrapper">
+            <div class="label-input-wrapper flex-column">
                 <label for="newsletter">Do you want to join our news letter?</label>
                 <fieldset id="newsletter">   
                     <div class="radio-wrapper">
@@ -151,7 +153,7 @@
                 </fieldset>
             </div>
 
-            <div class="label-input-wrapper">
+            <div class="label-input-wrapper flex-column">
                 <input type="checkbox" id="terms-of-service-check" required>
                 <label for="terms-of-service-check">I agree to the terms of service</label>
             </div>
@@ -163,12 +165,12 @@
     <footer>
 
         <div class="left-footer-wrapper">
-            <img class="logo-s" src="assets/Real_News_Logo.png"> <!--Header logo here but smaller in css-->
+            <img class="logo" src="assets/Real_News_Logo.png"> <!--Header logo here but smaller in css-->
             <p class="copyright-text"></p>
             <div class="socials-wrapper">
-            <a><svg class="social-svg"></svg></a>  <!-- COULD: change the color to their app's color on hover-->
-            <a><svg class="social-svg"></svg></a>
-            <a><svg class="social-svg"></svg></a>            
+            <a href="https://www.instagram.com/"><img class="social-svg"target="_blank"></img></a>  <!-- COULD: change the color to their app's color on hover-->
+            <a href="https://www.facebook.com/"><img class="social-svg" target="_blank"></img></a>
+            <a href="https://www.snapchat.com/"><img class="social-svg" target="_blank"></img></a>            
             </div>
         </div>
         

@@ -12,8 +12,10 @@ body{
 /* container */
 header{
     display: flex;
-    background-color: #e0e0e0;
+    background-color: #bc90e0;
     padding:1em;
+    align-items: center;
+
 }
 header nav{
     margin-left:auto;
@@ -23,34 +25,94 @@ section{
     display: flex;
 }
 
+section.headline{
+    background-image: url(assets/the_hague.png);
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+div.headline-wrapper{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:20vw;
+    margin-left:20vw;
+}
+
 footer{
     display: flex;
+    background-color: #2b2b2b;
 }
 
-/*Text*/
-
-hr{
-    width:100%;
-    padding:0;
-    margin:0;
+section.card-wrapper{
+    align-items: center;
 }
+article.card{
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+div.flex{
+    display: flex;
+}
+div.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 /*Images*/
-
-header img.logo-l{
-    width:50px;
+header img.logo{
+    width:100px;
+    aspect-ratio: 1/1;
 }
 
-svg.star{
+footer img.logo{
+    width:50px;
+    aspect-ratio: 1/1;
+}
+
+img.svg-star{
     padding: 0;
     margin: 0;
     width:1.5rem;
     aspect-ratio: 1/1;
+} 
+
+/*Text,buttons & other*/
+h1#headline{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:3rem;
+} h1#headline span.title-news{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#963DDB;
+    
 }
-svg.yellow{
-    fill:gold;
+h2#articles{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2rem;
 }
-svg.gray{
-    fill:gray;
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
 }
+p.headline{
+    font-weight: bold;
+    font-size:1.5rem
+}
+
+hr{
+    border: solid 2px black;
+    width:100%;
+    padding:0;
+    margin:0;
+    border-right:none;
+    border-left:none;
+}
+
+
 
 /*Media queries*/
