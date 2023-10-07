@@ -4,67 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title></title>
+    <link href="assets/Real_News_Logo.png" rel="icon">
+    <title>Real NEWS</title>
 </head>
 <body>
     <header>
     
-        <img class="logo" src="assets/Real_News_Logo.png"> <!--logo here-->
+        <img class="logo" src="assets/Real_News_Logo.png" alt="Globe with pruple R and Black N"> <!--logo here-->
     
-        <nav>
-            <a> <button>     <!--for every button add on hover color change-->
-            </button> </a>
-            <a> <button>
-            </button> </a>
-            <a> <button>
-            </button> </a>
-            <a> <button>
-            </button> </a>
+        <nav class="flex">
+            <a><button><!--for every button add on hover color change-->
+                Sources
+            </button></a>
+            <a><button>
+                Sponsors
+            </button></a>
+            <a><button>
+                Journalists
+            </button></a>
+            <a><button>
+                Archives
+            </button></a>
 
         </nav>
     
     </header>
     
-    <hr> <!-- page devider -->
 
-    <section class="headline"> <!-- add bg img here-->
-            <div class="headline-wrapper">
+    <section class="headline" alt="Background image of the hague faded white"> <!-- add bg img here-->
+            <div class="headline-wrapper flex-column">
                 <h1 id="headline">Real <span class="title-news">NEWS</span></h1> <!-- website title-->
                 <p class="headline">This is THE news outlet for real unfiltered news from The Netherlands! 
                 Our aim is to reduce the amount of fake news that circulates around these so called "mainstream news sources". 
                 This is totally not a parody of certain news and/or social media.. Not at all!</p>
-                <div class="header-link-wrapper flex">
-                    <a href="#articles"><button> Articles
+                <div class="headline-button-wrapper flex">
+                    <a href="#articles-title" ><button class="headline-button"> Articles
                     </button></a>
-                    <a href="#feedback-form"><button> Feedback
+                    <a href="#feedback-form-title"><button class="headline-button"> Feedback
                     </button></a>
                 </div>
             </div>
-    </section>
-    
-    <hr> <!-- page devider -->
+        </section>
 
-    <section class="articles">
-        <h2 id="articles">Articles</h2> <!-- sub-heading -->
+    <section class="articles flex-column">
+        <h2 id="articles-title">Articles</h2> <!-- sub-heading -->
         <div class="card-wrapper flex">
             
             <!-- These cards would've been so much easier using JS-->
             <article class="card flex-column"> 
-                <img class="card-img" src=""> <!--Add Border bottom for devider-->
+                <img class="card-img" src="assets/Ghost.jpg" alt="Digitally altered image of a large white ghostly figure in a misty forrest, with a humanoid figure walking towards it"> <!--Add Border bottom for devider-->
                 <h3 class="card-title"></h3>
                 <div class="star-wrapper flex">
                     <img class=svg-star src="assets/gold-star.svg"> <!--SVG's for scaleability-->
                     <img class=svg-star src="assets/gold-star.svg">
                     <img class=svg-star src="assets/gold-star.svg">
                     <img class=svg-star src="assets/gold-star.svg">
-                    <img class=svg-star src="assets/gold-star.svg">
-                    </div> 
-                <button>
+                    <img class=svg-star src="assets/gray-star.svg"> 
+                    </div>
+                    <p class="card-desc">The spooky season is rapidly approaching, but are you prepared? This article will help you prepare to face the demons of halloween.</p>
+                <button class="card-button">
+                    Go to
                 </button>
             </article>
 
             <article class="card flex-column"> 
-                <img class="card-img" src="">
+                <img class="card-img" src="assets/Glue.jpg" alt="Picture of a brown horse drinking in a lake with a bird in flight in the background">
                 <h3 class="card-title"></h3>
                 <div class="star-wrapper flex">          
                     <img class=svg-star src="assets/gold-star.svg"> 
@@ -73,32 +77,34 @@
                     <img class=svg-star src="assets/gray-star.svg"> 
                     <img class=svg-star src="assets/gray-star.svg"> 
                     </div>
-                <button>
+                    <p class="card-desc">New Glue recipe found. This one is mostly horse free, but what do horse lovers have to say about this?</p>
+                <button class="card-button">
+                    Go to
                 </button>
-                
             </article>
 
             <article class="card flex-column"> 
-                <img class="card-img" src="">
+                <img class="card-img" src="assets/Ferret.png" alt="Picture of my pet ferret Liam standing on his hind legs, Liam has a wild type fur coat, also he is subjectively very cute">
                 <h3 class="card-title"></h3>
                 <div class="star-wrapper flex">
                     <img class=svg-star src="assets/gold-star.svg">
                     <img class=svg-star src="assets/gold-star.svg">
                     <img class=svg-star src="assets/gold-star.svg"> 
-                    <img class=svg-star src="assets/gray-star.svg">
-                    <img class=svg-star src="assets/gray-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg">
+                    <img class=svg-star src="assets/gold-star.svg">
                     </div>
-                <button>
+                    <p class="card-desc">Breaking news, ferrets are really cute and make amazing pets! look at the little boy he's so cute. This one is called Liam and I love him. </p>
+                <button class="card-button">
+                    Go to
                 </button>
-                
             </article>
 
         </div>
     </section>
     
-    <section class="form">
-        <h2 id="feedback-form"></h2>  <!--Form header-->
-        <form>
+    <section class="form flex-column">
+        <h2 id="feedback-form-title">Feedback</h2>  <!--Form header-->
+        <form class="feedback-form">
             <div class="name-input-wrapper flex"> 
                 <div class="label-input-wrapper flex-column">
                     <label for="first-name">First name</label>
@@ -129,7 +135,7 @@
             <div class="label-input-wrapper flex-column">
             <label for="feedback-type">Feedback subject</label>
                 <select name="Feedback type" id="feedback-type" required>
-                    <option value="" hidden>Choose a subject</option>
+                    <option value="" hidden selected disabled>Choose a subject</option> 
                     <option value="Article content">Article content</option>
                     <option value="Website layout">Website Layout</option>
                     <option value="Other">Other</option>
@@ -145,27 +151,27 @@
                 <label for="newsletter">Do you want to join our news letter?</label>
                 <fieldset id="newsletter">   
                     <div class="radio-wrapper">
-                        <input type="radio" value="yes" id="yes" name="newsletter-request" checked>
+                        <input type="radio" value="yes" id="yes" name="newsletter-request" required>
                         <label if="yes">Yes</label>
-                        <input type="radio" value="no" id="no" name="newsletter-request">
+                        <input type="radio" value="no" id="no" name="newsletter-request" required>
                         <label for="no">No</label>
                     </div>
                 </fieldset>
             </div>
 
-            <div class="label-input-wrapper flex-column">
+            <div class="label-input-wrapper flex">
                 <input type="checkbox" id="terms-of-service-check" required>
                 <label for="terms-of-service-check">I agree to the terms of service</label>
             </div>
         
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit your feedback" id="submit">
         </form>
     </section>
 
-    <footer>
+    <footer class="flex">
 
         <div class="left-footer-wrapper">
-            <img class="logo" src="assets/Real_News_Logo.png"> <!--Header logo here but smaller in css-->
+            <img class="logo" src="assets/Real_News_Logo.png" alt="Globe with pruple R and Black N"> <!--Header logo here but smaller in css-->
             <p class="copyright-text"></p>
             <div class="socials-wrapper">
             <a href="https://www.instagram.com/"><img class="social-svg"target="_blank"></img></a>  <!-- COULD: change the color to their app's color on hover-->
