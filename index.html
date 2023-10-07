@@ -13,14 +13,15 @@
         <img class="logo" src="assets/Real_News_Logo.png" alt="Globe with pruple R and Black N"> <!--logo here-->
     
         <nav class="flex">
-            <a><button><!--for every button add on hover color change-->
-                Sources
+            <!--for every button add on hover color change and change size-->
+            <a><button class="active">
+                Home
             </button></a>
             <a><button>
                 Sponsors
             </button></a>
             <a><button>
-                Journalists
+                Sources
             </button></a>
             <a><button>
                 Archives
@@ -31,16 +32,18 @@
     </header>
     
 
-    <section class="headline" alt="Background image of the hague faded white"> <!-- add bg img here-->
+        <section class="headline flex" alt="Background image of the hague faded white"> <!-- add bg img here-->
             <div class="headline-wrapper flex-column">
                 <h1 id="headline">Real <span class="title-news">NEWS</span></h1> <!-- website title-->
                 <p class="headline">This is THE news outlet for real unfiltered news from The Netherlands! 
-                Our aim is to reduce the amount of fake news that circulates around these so called "mainstream news sources". 
-                This is totally not a parody of certain news and/or social media.. Not at all!</p>
+                Our aim is to provide the most informational, professional and accurate news there is.
+                Thank you for visiting Real NEWS!</p>
                 <div class="headline-button-wrapper flex">
-                    <a href="#articles-title" ><button class="headline-button"> Articles
+                    <a href="#articles-title"><button class="headline-button flex">
+                        Articles
                     </button></a>
-                    <a href="#feedback-form-title"><button class="headline-button"> Feedback
+                    <a href="#feedback-form-title"><button class="headline-button flex">
+                        Feedback
                     </button></a>
                 </div>
             </div>
@@ -50,8 +53,9 @@
         <h2 id="articles-title">Articles</h2> <!-- sub-heading -->
         <div class="card-wrapper flex">
             
+            <!-- Each card will transform to higher scale with website theme color dropshadow-->
             <!-- These cards would've been so much easier using JS-->
-            <article class="card flex-column"> 
+            <article class="card r flex-column"> 
                 <img class="card-img" src="assets/Ghost.jpg" alt="Digitally altered image of a large white ghostly figure in a misty forrest, with a humanoid figure walking towards it"> <!--Add Border bottom for devider-->
                 <h3 class="card-title"></h3>
                 <div class="star-wrapper flex">
@@ -61,7 +65,8 @@
                     <img class=svg-star src="assets/gold-star.svg">
                     <img class=svg-star src="assets/gray-star.svg"> 
                     </div>
-                    <p class="card-desc">The spooky season is rapidly approaching, but are you prepared? This article will help you prepare to face the demons of halloween.</p>
+                    <p class="card-desc">The spooky season is rapidly approaching, but are you prepared? 
+                        This article will help you prepare to face the demons of halloween.</p>
                 <button class="card-button">
                     Go to
                 </button>
@@ -77,13 +82,14 @@
                     <img class=svg-star src="assets/gray-star.svg"> 
                     <img class=svg-star src="assets/gray-star.svg"> 
                     </div>
-                    <p class="card-desc">New Glue recipe found. This one is mostly horse free, but what do horse lovers have to say about this?</p>
+                    <p class="card-desc">New Glue recipe found. 
+                        This one is mostly horse free, but what do horse lovers have to say about this?</p>
                 <button class="card-button">
                     Go to
                 </button>
             </article>
 
-            <article class="card flex-column"> 
+            <article class="card l flex-column"> 
                 <img class="card-img" src="assets/Ferret.png" alt="Picture of my pet ferret Liam standing on his hind legs, Liam has a wild type fur coat, also he is subjectively very cute">
                 <h3 class="card-title"></h3>
                 <div class="star-wrapper flex">
@@ -93,7 +99,9 @@
                     <img class=svg-star src="assets/gold-star.svg">
                     <img class=svg-star src="assets/gold-star.svg">
                     </div>
-                    <p class="card-desc">Breaking news, ferrets are really cute and make amazing pets! look at the little boy he's so cute. This one is called Liam and I love him. </p>
+                    <p class="card-desc">Breaking news, ferrets are really cute and make amazing pets! 
+                        look at the little boy he's so cute. 
+                        This one is called Liam and I love him. </p>
                 <button class="card-button">
                     Go to
                 </button>
@@ -103,9 +111,12 @@
     </section>
     
     <section class="form flex-column">
+        
         <h2 id="feedback-form-title">Feedback</h2>  <!--Form header-->
-        <form class="feedback-form">
-            <div class="name-input-wrapper flex"> 
+        
+        <form class="feedback-form flex-column">
+            
+            <div class="input-side-by-side flex"> 
                 <div class="label-input-wrapper flex-column">
                     <label for="first-name">First name</label>
                     <input placeholder="First name" type="text" id="first-name" required>
@@ -121,7 +132,7 @@
                 <input placeholder="Email" type="email" id="email" required>
             </div>
             
-            <div class="residence-birthday-wrapper flex">
+            <div class="input-side-by-side flex">
                 <div class="label-input-wrapper flex-column">
                     <label for="residence">Residence</label>
                     <input placeholder="City, Town, etc." type="text" id="residence" required>
@@ -165,7 +176,9 @@
             </div>
         
             <input type="submit" value="Submit your feedback" id="submit">
+        
         </form>
+    
     </section>
 
     <footer class="flex">
@@ -174,17 +187,17 @@
             <img class="logo" src="assets/Real_News_Logo.png" alt="Globe with pruple R and Black N"> <!--Header logo here but smaller in css-->
             <p class="copyright-text"></p>
             <div class="socials-wrapper">
-            <a href="https://www.instagram.com/"><img class="social-svg"target="_blank"></img></a>  <!-- COULD: change the color to their app's color on hover-->
-            <a href="https://www.facebook.com/"><img class="social-svg" target="_blank"></img></a>
-            <a href="https://www.snapchat.com/"><img class="social-svg" target="_blank"></img></a>            
+            <a href="https://www.instagram.com/" target="_blank"><svg class="social-svg instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.984 16.815c2.596 0 4.706-2.111 4.706-4.707 0-1.409-.623-2.674-1.606-3.538-.346-.303-.735-.556-1.158-.748-.593-.27-1.249-.421-1.941-.421s-1.349.151-1.941.421c-.424.194-.814.447-1.158.749-.985.864-1.608 2.129-1.608 3.538 0 2.595 2.112 4.706 4.706 4.706zm.016-8.184c1.921 0 3.479 1.557 3.479 3.478 0 1.921-1.558 3.479-3.479 3.479s-3.479-1.557-3.479-3.479c0-1.921 1.558-3.478 3.479-3.478zm5.223.369h6.777v10.278c0 2.608-2.114 4.722-4.722 4.722h-14.493c-2.608 0-4.785-2.114-4.785-4.722v-10.278h6.747c-.544.913-.872 1.969-.872 3.109 0 3.374 2.735 6.109 6.109 6.109s6.109-2.735 6.109-6.109c.001-1.14-.327-2.196-.87-3.109zm2.055-9h-12.278v5h-1v-5h-1v5h-1v-4.923c-.346.057-.682.143-1 .27v4.653h-1v-4.102c-1.202.857-2 2.246-2 3.824v3.278h7.473c1.167-1.282 2.798-2 4.511-2 1.722 0 3.351.725 4.511 2h7.505v-3.278c0-2.608-2.114-4.722-4.722-4.722zm2.722 5.265c0 .406-.333.735-.745.735h-2.511c-.411 0-.744-.329-.744-.735v-2.53c0-.406.333-.735.744-.735h2.511c.412 0 .745.329.745.735v2.53z"></svg></a>  <!-- Writing out the entire SVG here because its easier to change the color of them-->
+            <a href="https://www.facebook.com/" target="_blank"><svg class="social-svg facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z" ></svg></a>
+            <a href="https://www.snapchat.com/" target="_blank"><svg class="social-svg snapchat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-1.141 17.115c-.065.087-.117.457-.203.749-.098.337-.407.299-.75.232-.499-.097-.945-.125-1.464-.039-.898.149-1.83 1.477-3.393 1.477-1.682 0-2.557-1.321-3.49-1.477-.951-.158-1.497.096-1.826.096-.252 0-.35-.154-.388-.282-.084-.287-.138-.664-.204-.754-.646-.1-2.103-.354-2.141-1.005-.009-.169.11-.318.277-.346 2.139-.352 3.501-2.765 3.279-3.287-.158-.372-.84-.505-1.127-.619-.74-.293-.843-.63-.799-.86.061-.32.451-.535.778-.535.314 0 .869.42 1.301.181-.065-1.123-.223-2.728.177-3.624.763-1.71 2.434-2.555 4.105-2.555 1.683 0 3.366.858 4.123 2.554.399.895.242 2.493.178 3.625.408.225.913-.191 1.265-.191.345 0 .814.233.822.623.006.305-.266.568-.809.782-.292.115-.969.248-1.127.619-.227.535 1.177 2.941 3.279 3.287.167.027.287.176.277.346-.036.65-1.5.903-2.14 1.003z" ></svg></a>            
             </div>
         </div>
         
-        <div class="right-footer-wrapper">  <!--Color change on hover-->
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
+        <div class="right-footer-wrapper flex">  <!--Color change on hover-->
+            <a>Privacy policy</a>
+            <a>Terms of service</a>
+            <a>Cookies</a>
+            <a>Contact</a>
         </div>
 
     </footer>
