@@ -84,7 +84,6 @@ div.headline-button-wrapper{
 div.card-wrapper{
     display: flex;
     gap:7vw;
-    flex-wrap: wrap;
 }
 div.star-wrapper{
     display: flex;
@@ -225,7 +224,7 @@ p.card-desc{
 }
 p.copyright-text{
     font-size: 0.8rem;
-    color:grey; 
+    color:white; 
 }
 
 div.right-footer-wrapper a{
@@ -313,9 +312,62 @@ input#terms-of-service-check{
 }
    
 /*Media queries*/
-@media only screen and (max-width: 960) {
+
+/*When the cards would start clipping*/
+@media only screen and (max-width: 960px) {
     
-    section.articles div.flex {
+    section.articles div.card-wrapper {
       flex-direction: column;
+    }
+  }
+
+
+/*mobile layout*/
+@media only screen and (max-width: 960px) {
+    :root{/*making the main font slightly smaller so more content fits on a phone screen*/
+        font-size: 14px; 
+    }
+    
+    header{/* most styling here is putting things in flex column so they display top to bottom instead of side to side */
+        flex-direction: column;
+    }
+    header img.logo{
+        margin:0;
+        padding-bottom: 1rem;
+    }
+    header nav{
+        align-items: center;
+        flex-direction: column;
+        margin:0;
+    }
+    nav button{
+        width: 90vw;
+        border:2px lightgray solid;
+    }
+    button.active{
+        transform: none;
+    }
+    div.headline-wrapper{
+        margin-left:5vw;
+        margin-right: 5vw;
+    }
+    div.input-side-by-side {
+      flex-direction: column;
+    }
+    input#first-name, input#last-name, input#birthday, input#residence{
+        width: calc(60vw - 7.2px);
+    }
+    footer{
+        flex-direction: column;
+    }
+    div.left-footer-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    div.right-footer-wrapper{
+        margin:0;
+        margin-top:1rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
   }
