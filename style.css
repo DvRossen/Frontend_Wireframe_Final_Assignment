@@ -256,11 +256,11 @@ button, input#submit{
     border-radius: 5px;
     padding: 0.5rem;
     transition: transform 100ms, color 300ms, background-color 300ms;
-}button:hover, input#submit:hover, button.active{
+}button:hover, input#submit:hover, button.active, nav.headline-button-wrapper button:hover{
     transform: scale(1.1);
     color: white;
     background-color: #963DDB;
-}button:active, input#submit:active{
+}button:active, input#submit:active, nav.headline-button-wrapper button:active{
     transform:scale(1.08);
     background-color: #ab51f1;
 }
@@ -269,6 +269,10 @@ nav button{
     font-size:1.5rem;
     color: black;
     background-color: whitesmoke;
+}
+nav.headline-button-wrapper button{
+    background-color: black;
+    color: white;
 }
 
 button.headline-button{ 
@@ -353,6 +357,10 @@ input#terms-of-service-check{
     nav button{
         width: 90vw;
         border:2px lightgray solid;
+    }
+    nav.headline-button-wrapper button{
+        width:max-content;
+        border: none;
     }
     button.active{
         transform: none;
