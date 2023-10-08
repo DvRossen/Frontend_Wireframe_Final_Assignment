@@ -232,6 +232,7 @@ div.right-footer-wrapper a{
     color:grey;
     font-size: 0.8rem;
     justify-self: center;
+    text-decoration: underline;
 }
 div.right-footer-wrapper a:hover{
 color: lightgray;
@@ -317,7 +318,10 @@ input#terms-of-service-check{
 @media only screen and (max-width: 960px) {
     
     section.articles div.card-wrapper {
-      flex-direction: column;
+        flex-direction: column;
+    }
+    article.card:hover {
+        transform:none;
     }
   }
 
