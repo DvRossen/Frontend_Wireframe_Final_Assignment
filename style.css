@@ -311,11 +311,11 @@ input#terms-of-service-check{
     margin-right:0.9rem;
     height: 0.9rem;
     width: 0.9rem;
-}input:invalid,select:invalid,textarea:invalid{
+}input:invalid,select:invalid,textarea:invalid,fieldset:invalid{
     border:red solid 1.6px;
     border-radius: 2px;
 }
-   
+
 /*Media queries*/
 
 /*When the cards would start clipping*/
