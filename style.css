@@ -70,6 +70,11 @@ article.card:hover{
    
 }
 
+nav.headline-button-wrapper{
+    display: flex;
+    gap:1rem
+}
+
 div.headline-wrapper{
     display: flex;
     flex-direction: column;
@@ -77,10 +82,7 @@ div.headline-wrapper{
     margin-right:20vw;
     margin-left:20vw;
 }
-div.headline-button-wrapper{
-    display: flex;
-    gap:1rem
-}
+
 div.card-wrapper{
     display: flex;
     gap:7vw;
